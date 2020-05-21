@@ -1,0 +1,552 @@
+2020-02-26 15:02:46 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 73, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-02-26 15:10:19 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:11:35 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:11:58 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:12:36 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:13:00 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:13:38 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:14:55 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:17:39 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:20:22 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:31:35 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 15:35:20 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 574, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have shape (200, 200, 3) but got array with shape (200, 200, 4)
+2020-02-26 16:09:23 Wed , ERROR , app.py get line 82 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\app.py", line 75, in get
+    results, hit, use_time = searcher.search(args['imageUrl'])
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 29, in search
+    results, hit = self.search_with_hash(image_path)
+  File "C:\Users\blm\PycharmProjects\query_iamge\app\search.py", line 39, in search_with_hash
+    pred = self.model_orig.predict(image)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 909, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 715, in predict
+    x, check_steps=True, steps_name='steps', steps=steps)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 2472, in _standardize_user_data
+    exception_prefix='input')
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\training_utils.py", line 565, in standardize_input_data
+    'with shape ' + str(data_shape))
+ValueError: Error when checking input: expected vgg19_input to have 4 dimensions, but got array with shape (1, 1)
+2020-05-20 21:39:59 Wed , ERROR , app.py post line 93 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 87, in post
+    stylename.save(os.path.join(app.config['UPLOAD_FOLDER'], stylename))
+AttributeError: 'str' object has no attribute 'save'
+2020-05-20 21:40:26 Wed , ERROR , app.py post line 93 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 87, in post
+    stylename.save(os.path.join(app.config['UPLOAD_FOLDER'], stylename))
+AttributeError: 'str' object has no attribute 'save'
+2020-05-20 21:41:05 Wed , ERROR , app.py post line 90 , Not allowed file or not safe!
+2020-05-20 21:44:13 Wed , ERROR , app.py post line 94 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 88, in post
+    stylename.save(os.path.join(app.config['UPLOAD_FOLDER'], stylename))
+AttributeError: 'str' object has no attribute 'save'
+2020-05-20 21:45:20 Wed , ERROR , app.py post line 95 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 88, in post
+    stylename.save(os.path.join(app.config['UPLOAD_FOLDER'], stylename))
+AttributeError: 'str' object has no attribute 'save'
+2020-05-20 21:46:03 Wed , ERROR , app.py post line 97 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 90, in post
+    stylename.save(os.path.join(app.config['UPLOAD_FOLDER'], stylename))
+AttributeError: 'str' object has no attribute 'save'
+2020-05-20 22:02:36 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 62, in get
+    contentUrl, styleUrl = url
+ValueError: too many values to unpack (expected 2)
+2020-05-20 22:02:52 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 62, in get
+    contentUrl, styleUrl = url
+ValueError: too many values to unpack (expected 2)
+2020-05-20 22:04:37 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 60, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:05:49 Wed , ERROR , app.py get line 74 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 60, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:05:52 Wed , ERROR , app.py get line 74 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 60, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:06:25 Wed , ERROR , app.py get line 75 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 60, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:07:12 Wed , ERROR , app.py get line 76 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 59, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:07:51 Wed , ERROR , app.py get line 77 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 60, in get
+    args = parser.parse_args()
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 328, in parse_args
+    value, found = arg.parse(req, self.bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 246, in parse
+    self.handle_validation_error(ValueError(error_msg), bundle_errors)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\reqparse.py", line 173, in handle_validation_error
+    flask_restful.abort(400, message=msg)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\flask_restful\__init__.py", line 32, in abort
+    original_flask_abort(http_status_code)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 774, in abort
+    return _aborter(status, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\werkzeug\exceptions.py", line 755, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2020-05-20 22:09:21 Wed , ERROR , app.py get line 74 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 70, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:10:33 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 67, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:14:07 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 67, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:15:58 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 67, in get
+    style_path = os.path.abspath(
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:16:41 Wed , ERROR , app.py get line 71 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 67, in get
+    style_path = os.path.abspath(
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:17:24 Wed , ERROR , app.py get line 77 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:18:00 Wed , ERROR , app.py get line 77 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:19:24 Wed , ERROR , app.py get line 76 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 70, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:19:27 Wed , ERROR , app.py get line 76 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 70, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 221, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:20:09 Wed , ERROR , app.py get line 76 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 70, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 223, in precession
+    if contentUrl.lower().endswith('png'):
+NameError: name 'contentUrl' is not defined
+2020-05-20 22:26:16 Wed , ERROR , app.py get line 78 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 74, in get
+    'img', output_image, data_format=None, file_format=None, scale=True, **kwargs
+NameError: name 'kwargs' is not defined
+2020-05-20 22:27:32 Wed , ERROR , app.py get line 78 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 74, in get
+    'img.jpg', output_image)
+NameError: name 'kwargs' is not defined
+2020-05-20 22:41:42 Wed , ERROR , app.py get line 76 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    output_image = model([content, style], training=False)[0]
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\base_layer.py", line 822, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\network.py", line 717, in call
+    convert_kwargs_to_constants=base_layer_utils.call_context().saving)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\network.py", line 891, in _run_internal_graph
+    output_tensors = layer(computed_tensors, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\base_layer.py", line 822, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 180, in call
+    y = self.conv1([y, x_2])
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\base_layer.py", line 822, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 137, in call
+    output = self.conv1(output)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\engine\base_layer.py", line 822, in __call__
+    outputs = self.call(cast_inputs, *args, **kwargs)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\keras\layers\convolutional.py", line 209, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 1135, in __call__
+    return self.conv_op(inp, filter)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 640, in __call__
+    return self.call(inp, filter)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 239, in __call__
+    name=self.name)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2011, in conv2d
+    name=name)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 933, in conv2d
+    data_format=data_format, dilations=dilations, name=name, ctx=_ctx)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1022, in conv2d_eager_fallback
+    ctx=ctx, name=name)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\eager\execute.py", line 67, in quick_execute
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[1,32,512,512] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:Conv2D]
+2020-05-21 08:20:31 Thu , ERROR , app.py get line 81 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 77, in get
+    image = file(save_path)
+NameError: name 'file' is not defined
+2020-05-21 08:20:47 Thu , ERROR , app.py get line 81 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 77, in get
+    image = file(save_path)
+NameError: name 'file' is not defined
+2020-05-21 08:21:59 Thu , ERROR , app.py get line 83 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 79, in get
+    image = file(save_path)
+NameError: name 'file' is not defined
+2020-05-21 08:23:51 Thu , ERROR , app.py get line 83 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 77, in get
+    image = file(save_path)
+NameError: name 'file' is not defined
+2020-05-21 08:26:49 Thu , ERROR , app.py get line 84 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 80, in get
+    img_stream = img_f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xff in position 0: illegal multibyte sequence
+2020-05-21 08:27:36 Thu , ERROR , app.py get line 84 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 80, in get
+    img_stream = img_f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xff in position 0: illegal multibyte sequence
+2020-05-21 09:54:36 Thu , ERROR , app.py get line 80 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 228, in precession
+    h, w, c = content.shape()
+TypeError: 'TensorShape' object is not callable
+2020-05-21 09:56:32 Thu , ERROR , app.py get line 80 , Exception occur!
+Traceback (most recent call last):
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_io_ops.py", line 549, in read_file
+    tld.op_callbacks, filename)
+tensorflow.python.eager.core._FallbackException: This function does not handle the case of the path where all inputs are not already EagerTensors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 222, in precession
+    content = tf.io.read_file(content_path)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_io_ops.py", line 554, in read_file
+    filename, name=name, ctx=_ctx)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_io_ops.py", line 592, in read_file_eager_fallback
+    attrs=_attrs, ctx=ctx, name=name)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\eager\execute.py", line 61, in quick_execute
+    num_outputs)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 112: invalid continuation byte
+2020-05-21 10:07:19 Thu , ERROR , app.py get line 80 , Exception occur!
+Traceback (most recent call last):
+  File "C:/Users/blm/PycharmProjects/image_style/app/app.py", line 71, in get
+    content, style = g_model.precession(content_path, style_path)
+  File "C:\Users\blm\PycharmProjects\image_style\app\g_model.py", line 235, in precession
+    content = tf.image.resize(content, size=[new_h, new_w])
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1357, in resize_images_v2
+    skip_resize_if_same=False)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1133, in _resize_images_common
+    images = resizer_fn(images, size)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\image_ops_impl.py", line 1334, in resize_fn
+    images_t, new_size, half_pixel_centers=True)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\ops\gen_image_ops.py", line 3243, in resize_bilinear
+    _ops.raise_from_not_ok_status(e, name)
+  File "C:\Users\blm\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow_core\python\framework\ops.py", line 6606, in raise_from_not_ok_status
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.InvalidArgumentError: output dimensions must be positive [Op:ResizeBilinear]
