@@ -2,7 +2,7 @@ setuptools==41.0.0
 Flask==1.1.1
 Flask-RESTful==0.3.8
 h5py==2.10.0
-tensorflow==2.0.0b1
+tensorflow==2.5.1
 Click==7.0
 Werkzeug==0.15.6
 gast==0.2.2
