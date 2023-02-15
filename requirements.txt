@@ -4,5 +4,5 @@ Flask-RESTful==0.3.8
 h5py==2.10.0
 tensorflow==2.5.3
 Click==7.0
-Werkzeug==0.15.6
+Werkzeug==2.2.3
 gast==0.2.2
